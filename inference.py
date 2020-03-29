@@ -139,7 +139,7 @@ if __name__ == '__main__':
     parser.add_argument('--pth', required=True,
                         help='path to load saved checkpoint.')
     parser.add_argument('--img_glob', required=True,
-                        help='NOTE: Remeber to quote your glob path. '
+                        help='NOTE: Remember to quote your glob path. '
                              'All the given images are assumed to be aligned'
                              'or you should use preporcess.py to do so.')
     parser.add_argument('--output_dir', required=True)
