@@ -98,9 +98,11 @@ if __name__ == '__main__':
     pcd = open3d.geometry.PointCloud()
     pcd.points = open3d.utility.Vector3dVector(all_xyz)
     pcd.colors = open3d.utility.Vector3dVector(all_rgb)
+    
+    open3d.io.write_point_cloud("result.pcd", pcd)
 
     # Visualize result
-    tobe_visualize = [pcd]
-    if not args.ignore_wireframe:
-        tobe_visualize.append(wf_line_set)
-    open3d.visualization.draw_geometries(tobe_visualize)
+    # tobe_visualize = [pcd]
+    # if not args.ignore_wireframe:
+        # tobe_visualize.append(wf_line_set)
+   # open3d.visualization.draw_geometries(tobe_visualize)
