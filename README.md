@@ -97,7 +97,7 @@ In below explaination, I will use `assets/demo.png` for example.
 ### 2. Estimating layout with HorizonNet
 - **Execution**: Predict the layout from above aligned image and line segments by firing below command.
     ```bash
-    python inference.py --pth ckpt/resnet50_rnn__mp3d.pth --img_glob assets/preprocessed/demo_aligned_rgb.png --output_dir assets/inferenced --visualize
+    python inference.py --pth ckpt/resnet50_rnn__st3d.pth --img_glob assets/preprocessed/demo_aligned_rgb.png --output_dir assets/inferenced --visualize
     ```
     - `--pth` path to the trained model.
     - `--img_glob` path to the preprocessed image.
